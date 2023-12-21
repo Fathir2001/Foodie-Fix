@@ -7,6 +7,42 @@ Welcome to our Foodie Fix Platform project! This modern e-commerce platform allo
 
 This project consists of both frontend and backend components developed using HTML, CSS, JavaScript, PHP, and MySQL. It provides a user-friendly interface for customers to view, select, and order items from our trendy restaurant.
 
+## Prerequisites
+
+- Download and install [WampServer](https://www.wampserver.com/en/) for Windows or [MAMP](https://www.mamp.info/en/downloads/) for macOS.
+- Download and install [Visual Studio Code](https://code.visualstudio.com/download) or any other code editor of your choice.
+
+## Installing
+1. Clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/Fathir2001/Foodie-Fix.git
+```
+### Running the Application
+
+- Open the application you installed wampserver and start the server.
+- Go to your browser and type `localhost` in the address bar.
+- Select phpMyAdmin and Create a new database named `foodiefix`.
+- Create the table name users and add the following columns:
+        - `full_name` VARCHAR(255) 
+        - `phone_number` VARCHAR(15) 
+        - `address` VARCHAR(255)
+        - `email` VARCHAR(255) 
+        - `password` VARCHAR(255)
+
+- Create the table name booking and add the following columns:
+
+        - `people` INT(6) 
+        - `time` VARCHAR(50) 
+        - `phone` VARCHAR(20) 
+        - `date` DATE 
+        - `name` VARCHAR(50)
+        - `email` VARCHAR(100)
+
+2. Open the application in your browser at `localhost/navbar/config.php` to connect the database.
+3. After connecting the database, open the application in your browser at `localhost/navbar/index.html` to view the application.
+
+
 ## Features
 
 - **Homepage**: Visually appealing showcase of featured items.
